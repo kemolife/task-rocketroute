@@ -1,0 +1,17 @@
+{
+    "name": "rocket/test",
+    "description": "rocket route test task",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vitalii Antoniuk",
+            "email": "kemolife1990@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "App\\": "src/" }
+    },
+    "require": {
+        "symfony/http-foundation": "^4.1"
+    }
+}
