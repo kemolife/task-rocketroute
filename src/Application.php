@@ -44,7 +44,7 @@ class Application
             $this->response->setStatusCode(Response::HTTP_OK);
             $this->response->headers->set('Content-Type', 'text/html');
         }elseif($index === 'api' && $code){
-            $api = new Api($this->request, $this->response, $this->configObj);
+            $api = new NotamApi($this->request, $this->response, $this->configObj);
             $api->prepareResponse($code);
         }
 
